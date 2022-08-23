@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+/*---------------------header---------------------*/
+
+header{
+    z-index: 3;
+    position: fixed;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.navbar{
+    width: 80%;
+    margin: auto;
+    padding: 25px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 70px;
+    cursor: pointer;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
+    font-family: Roboto, "sans-serif";
+    font-size: 1.2rem;
+}
+
+.navbar ul li::before{
+    content: "";
+    height: 3px;
+    width: 0;
+    background: #002856;
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    transition: 0.4s ease-out;
+}
+
+.navbar ul li:hover::before{
+    width: 100%;
+}
+
+/*---------------------presentacion---------------------*/
+
+.presentacion{
+    overflow: hidden;
+    width: 100%;
+    margin: auto;
+    background-image: url('../img/bul.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.presentacion::before{
+    position: absolute;
+    content: '';
+    background-color: black;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: .7;
+}
+
+.content{
+  position: relative;
+}
+
+h1{
+    padding: 25%;
+    color: white;
+    text-align: center;
+    font-size: 4rem;
+}
+
+/*---------------------catalogo---------------------*/
+
+.catalogo{
+    overflow: hidden;
+    width: 100%;
+    height: 1024px;
+}
+
+/*---------------------maniobras---------------------*/
+
+.maniobras{
+    text-align: center;
+    align-items: center;
+    align-self: center;
+    overflow: hidden;
+    width: 100%;
+    height: 1020px;
+}
+
+/*---------------------mapa---------------------*/
+
+.mapa{
+    width: 100%;
+    height: 1020px;
+    overflow: hidden;
+}
+
